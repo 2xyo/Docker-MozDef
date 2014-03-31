@@ -20,15 +20,7 @@ ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 ENV LC_CTYPE en_US.UTF-8
 
-
-# Java Oracle
-RUN ( apt-get install -q -y software-properties-common \
-	&& apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886 \
-	&& add-apt-repository -y --enable-source 'deb http://ppa.launchpad.net/webupd8team/java/ubuntu/ saucy main' \
-	&& apt-get update \
-	&& echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections \
-	&& apt-get install -q -y oracle-java7-installer oracle-java7-set-default)
-
+RUN apt-get install -q -y openjdk-7-jre
 
 # rabbit mq
 RUN apt-get install -q -y rabbitmq-server
