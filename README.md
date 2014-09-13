@@ -1,3 +1,8 @@
+This repo is outdated
+=====================
+
+See the official repo at [https://github.com/jeffbryner/MozDef/tree/master/docker](https://github.com/jeffbryner/MozDef/tree/master/docker).
+
 Docker-MozDef
 =============
 
